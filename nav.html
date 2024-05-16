@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitkat's Cafe</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'>
+                    <a href='#'><img src='logo.jpg' /></a>
+                </li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-us">About us</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#customer">Gallery</a></li>
+                <li><a href="#contact-us">Contact</a></li>
+                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+            </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+
+                <div class="cartt" id="cartButton">
+                    <button class="nav-cart-button"><img src="shopping-bag.png" class="bag"></button>
+
+                </div>
+
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <section>
+
+    </section>
+
+
+    <section class="Home" id="home">
+        <div class="hero">
+            <div class="hero-container">
+                <div class="headline1">
+                    <h1 class="headline-one">Discover your new favorite café at Kikat's Cafe.</h1>
+                </div>
+
+                <div class="subheadline">
+                    <h2 class="sub-headline">A Place Where the Coffee Is Strong, the Food Is Delicious, and the Atmosphere Is Always Inviting</h2>
+                </div>
+
+                <div class="buy-Now-Button">
+                    <a href="#menu">
+                        <h1 class="cta">Buy Now</h1>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+                <img src="hero-image.webp" class="hero-pic">
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="quick-about-us" id="about-us">
+        <div class="marque">
+            <marquee direction="right">
+                <p class="text">We are open Monday to Thursday from 4 PM to 11 PM. We are open Monday to Thursday from 4 PM to 11 PM. We are open Monday to Thursday from 4 PM to 11 PM. We are open Monday to Thursday from 4 PM to 11 PM. </p>
+            </marquee>
+        </div>
+        <div class="title">
+            <h1 class="content">Why Choose Us</h1>
+        </div>
+        <div class="about-us">
+            <div class="cardOne">
+                <div class="iconOne">
+                    <img src="high-quality.png" class="icon">
+                </div>
+                <div class="description">
+                    <h1 class="subtitle" style="color:#284C58">
+                        Exceptional Quality
+                    </h1>
+                    <p class="content">
+                        Our drinks are made from the finest ingredients, ensuring every sip is a taste sensation.
+                    </p>
+                </div>
+            </div>
+            <div class="cardOne">
+                <div class="iconOne">
+                    <img src="care.png" class="icon">
+                </div>
+                <div class="description">
+                    <h1 class="subtitle" style="color:#284C58">
+                        Warm Hospitality
+                    </h1>
+                    <p class="content">
+                        Step into our café, and you'll instantly feel at home.
+                    </p>
+                </div>
+            </div>
+            <div class="cardOne">
+                <div class="iconOne">
+                    <img src="relax.png" class="icon">
+                </div>
+                <div class="description">
+                    <h1 class="subtitle" style="color:#284C58">
+                        Inviting Atmosphere
+                    </h1>
+                    <p class="content">
+                        Our café is more than just a place to grab a quick cup of coffee; it's a destination where you can unwind and connect with others.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="choices" id="menu">
+
+        <div class="title">
+            <h1 class="content">Our Menu</h1>
+        </div>
+
+        <section class="selection">
+            <div id="buttonContainer">
+                <button id="allProducts" class="active">All Products</button>
+                <button id="inStock">Drinks</button>
+                <button id="outOfStock">Snacks</button>
+            </div>
+
+
+
+
+
+            <div class="cart-display">
+                <!--Sidebar-->
+                <div class="cart">
+                    <h2>Cart</h2>
+                    <ul class="cart-items"></ul>
+                    <p>Total: <span class="total-price">0.00</span></p>
+                    <button class="checkout-button">Checkout</button>
+                    <button class="exit-button">&times;</button>
+                </div>
+                <div class="cart-message">Please order</div>
+            </div>
+
+
+            <div class="products" id="productList">
+
+                <div class="product inStock">
+                    <div class="product">
+                        <div class="imahe"><img src="wcm.png" alt="white chocolate" class="wcm">
+                        </div>
+                        <h3>White Chocolate Mocha</h3>
+                        <div class="reviews">
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                        </div>
+
+                        <select class="size">
+      <option value="small" data-price="29">Small: 29 PHP</option>
+      <option value="medium" data-price="39">Medium : 39 PHP</option>
+      <option value="large" data-price="49">Large: 49 PHP</option>
+    </select>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+
+                <div class="product inStock">
+                    <div class="product">
+                        <div class="imahe"><img src="saltedd.png" alt="salted" class="salted">
+                        </div>
+                        <h3>Salted Caramel</h3>
+                        <div class="reviews">
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                        </div>
+
+                        <select class="size">
+      <option value="Small" data-price="29">Small: 29 PHP</option>
+      <option value="Medium" data-price="39">Medium : 39 PHP</option>
+      <option value="Large" data-price="49">Large: 49 PHP</option>
+    </select>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product inStock">
+                    <div class="product">
+                        <div class="imahe"><img src="french vanilla.png" alt="salted" class="fv">
+                        </div>
+                        <h3>French Vanilla</h3>
+                        <div class="reviews">
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                        </div>
+
+                        <select class="size">
+      <option value="Small" data-price="29">Small: 29 PHP</option>
+      <option value="Medium" data-price="39">Medium : 39 PHP</option>
+      <option value="Large" data-price="49">Large: 49 PHP</option>
+    </select>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product inStock">
+                    <div class="product">
+                        <div class="imahe"><img src="mocha.png" alt="mocha" class="mocha">
+                        </div>
+                        <h3>Mocha</h3>
+                        <div class="reviews">
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                        </div>
+
+                        <select class="size">
+      <option value="Small" data-price="29">Small: 29 PHP</option>
+      <option value="Medium" data-price="39">Medium : 39 PHP</option>
+      <option value="Large" data-price="49">Large: 49 PHP</option>
+    </select>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+
+
+                <div class="product inStock">
+                    <div class="product">
+                        <div class="imahe"><img src="hazelnut.png" alt="hazelnut" class="hazelnut">
+                        </div>
+                        <h3>Hazelnut Latte</h3>
+                        <div class="reviews">
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                        </div>
+
+
+                        <select class="size">
+      <option value="Small" data-price="29">Small: 29 PHP</option>
+      <option value="Medium" data-price="39">Medium : 39 PHP</option>
+      <option value="Large" data-price="49">Large: 49 PHP</option>
+    </select>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product inStock">
+                    <div class="product">
+                        <div class="imahe"><img src="strawberry.png" alt="strawberry" class="strawberry">
+                        </div>
+                        <h3>Strawberry</h3>
+                        <div class="reviews">
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                        </div>
+
+
+                        <select class="size">
+      <option value="Small" data-price="29">Small: 29 PHP</option>
+      <option value="Medium" data-price="39">Medium : 39 PHP</option>
+      <option value="Large" data-price="49">Large: 49 PHP</option>
+    </select>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+
+
+
+                <div class="product outOfStock">
+
+                    <div class="product">
+                        <div class="imahe"><img src="bbq.jpg" alt="BBQ Fries" data-price="69" class=" bbq">
+                        </div>
+
+                        <h3>BBQ Fries</h3>
+                        <div class="reviews">
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                        </div>
+                        <p class="price">Price:<span>$</span>69 PHP</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+
+                </div>
+
+                <div class="product outOfStock">
+
+                    <div class="product">
+                        <div class="imahe"><img src="Graham.jpg" alt="Graham" data-price="79" class="graham">
+                        </div>
+
+                        <h3>Graham</h3>
+                        <div class="reviews">
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                        </div>
+                        <p class="price">Price:<span>$</span>79 PHP</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+
+                </div>
+
+                <div class="product outOfStock">
+
+                    <div class="product">
+                        <div class="imahe"><img src="carbonara.jpg" alt="Carbonara" class="carbonara">
+                        </div>
+
+                        <h3>Carbonara</h3>
+                        <div class="reviews">
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                        </div>
+                        <p class="price">Price:<span>$</span>89.00 </p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+
+                </div>
+
+                <div class="product outOfStock">
+
+                    <div class="product">
+                        <div class="imahe"><img src="spag.jpg" alt="Spaghetti" class="spag">
+                        </div>
+
+                        <h3>Signature Spaghetti</h3>
+                        <div class="reviews">
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                            <i class='bx bxs-star' style='color:#ffc504'></i>
+                        </div>
+                        <p class="price">Price: <span>$</span>89 PHP</p>
+
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <section class="ourClients" id="customer">
+            <div class="title">
+                <h1 class="content">Our Clients</h1>
+            </div>
+            <div class="clients">
+                <div class="c">
+                    <img src="client1.jpg" alt="clients" class="client">
+                </div>
+                <div class="c">
+                    <img src="client2.jpg" alt="clients" class="client">
+                </div>
+                <div class="c">
+                    <img src="client3.jpg" alt="clients" class="client">
+                </div>
+                <div class="c">
+                    <img src="client4.jpg" alt="clients" class="client">
+                </div>
+
+                <div class="c">
+                    <img src="client5.jpg" alt="clients" class="client">
+                </div>
+
+                <div class="c">
+                    <img src="client6.jpg" alt="clients" class="client">
+                </div>
+
+                <div class="c">
+                    <img src="client8.jpg" alt="clients" class="client">
+                </div>
+
+                <div class="c">
+                    <img src="client9.jpg" alt="clients" class="client">
+                </div>
+
+
+
+            </div>
+
+
+
+
+        </section>
+
+        <section class="contactInfo" id="contact-us">
+            <div class="title">
+                <h1 class="content">Contact Us</h1>
+            </div>
+            <div class="contactInformation">
+                <div class="contactDetails">
+                    <div class="headline">
+                        <h1 class="contact-headline">
+                            We'd love to hear from you!
+                        </h1>
+                        <p class="description">Reach out to us with any questions, feedback, or inquiries. We will get back to you as soon as we can.</p>
+                    </div>
+
+                    <div class="icons">
+                        <h1 class="address"><i class='bx bxl-facebook-circle' style='color:#ffffff'></i>KitKat's Cafe</h1>
+                        <h1 class="email"><i class='bx bxs-envelope' style='color:#fff'></i>keithyancybatalla@gmail.com</h1>
+                        <h1 class="number"><i class='bx bxs-phone'></i>0910 603 9796</h1>
+                    </div>
+
+                </div>
+
+                <div class="contactInputField">
+
+                    <div class="drop">
+                        <h1 class="message"> Drop us a message using the form below.</h1>
+                    </div>
+
+
+                    <form action="" autocomplete="off">
+                        <div class="inputField">
+                            <div class="firstName">
+                                <input type="text" class="form_field1" placeholder="First Name" name="name" id='firstname' required />
+                            </div>
+
+                            <div class="lastName">
+                                <input type="text" class="form_field1" placeholder="Last Name" name="name" id='lastname' required/>
+
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="email">
+                            <input type="email" class="form_field" placeholder="Email" name="Email" id='Email' required/>
+
+
+                        </div>
+
+                        <div class="textArea">
+                            <textarea class="textAreaa" placeholder="Message"></textarea>
+                        </div>
+
+                        <button class="button">Submit</button>
+
+                    </form>
+
+
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <footer class="footer">
+            <div class="custom-shape-divider-bottom-1714841945">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+            <div class="wavy">
+
+                <div class="Footer">
+
+                    <div class="footer-image">
+                        <img src="logo.jpg" alt="" class="logos">
+                    </div>
+
+                    <div class="linkss">
+                        <a class="home-link" href="#home">Home</a>
+                        <a class="about-us-link" href="#about-us">About Us</a>
+
+                        <a class="menu-link" href="#menu">Menu</a>
+                        <a class="menu-link" href="#customer">Gallery</a>
+                        <a class="contact-link" href="#contact-us">Contact</a>
+                    </div>
+
+                    <div class="details">
+                        <h1 class="address"><i class='bx bxs-location-plus'></i>Dacap Sur, Bani, Pangasinan</h1>
+                        <h1 class="email"><i class='bx bxs-envelope' style='color:#ffffff'></i>keithyancybatalla@gmail.com</h1>
+                        <h1 class="number"><i class='bx bxs-phone'></i>0910 603 9796</h1>
+                    </div>
+
+                </div>
+
+                <div class="rights">
+                    <p class="copyright">All Rights Reserved 2024 by Cassandra Kaye Honrada</p>
+                </div>
+            </div>
+
+        </footer>
+
+
+
+</body>
+
+<script src="finals.js"></script>
+
+</html>
